@@ -110,28 +110,32 @@ const Chat = ({ selectedUser, loadedChats }) => {
   }));
 
   return (
-    <Box>
+    <Box
+      sx={{
+        
+      }}
+    >
       {selectedUser ? (
         <>
           <Box
             sx={{
               display: "flex",
-              alignItems: "center",
+              alignItems: "flex-start",
               justifyContent: "space-between",
-              height: "57px",
-              padding: "0 10px",
+              padding: "18px 10px",
               borderBottom: "0.5px solid #000",
               borderBottomColor: "divider",
-              bgcolor: "#636262",
+              // bgcolor: "#636262",
+              // height:"100vh"
             }}
-          >
+            >
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
                 gap: 1,
               }}
-            >
+              >
               <StyledBadge
                 overlap="circular"
                 anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
@@ -175,9 +179,11 @@ const Chat = ({ selectedUser, loadedChats }) => {
 
           <Box
             sx={{
-              height: "84.5vh",
+              display: "flex",
+              flexDirection: "column",
+              height: "89%",
               overflow: "auto",
-              p: 1,
+              // p: 1,
               backgroundImage: `url("/chatbg.jpg")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -294,7 +300,8 @@ const Chat = ({ selectedUser, loadedChats }) => {
             </Box>
             <Box
               sx={{
-                mt: 1,
+                // mt: 1,
+                my: 1,
                 bgcolor: "#262525",
                 width: "60vw",
                 borderRadius: 1,

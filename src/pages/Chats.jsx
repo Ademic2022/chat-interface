@@ -17,18 +17,18 @@ const Chats = () => {
     });
   };
   return (
-    <Box sx={{ position: "fixed", top: 0, left: 0, bgcolor: "#636262" }}>
+    <Box sx={{ position: "fixed", top: 0, left: 0}}>
       {!isMobile ? (
-        <Box sx={{ display: "flex" }}>
-          <Box sx={{ width: "30vw" }}>
+        <Box sx={{ display: "flex"}}>
+          {/* <Box sx={{ width: "30vw" }}> */}
             <Users onSelectUser={handleSelectUser} />
-          </Box>
-          <Box sx={{ width: "70vw" }}>
+          {/* </Box> */}
+          {/* <Box sx={{ width: "70vw" }}>
             <Chat
               selectedUser={state.selectedUser}
               loadedChats={state.messages}
             />
-          </Box>
+          </Box> */}
         </Box>
       ) : (
         "This page is build for destop devices, to use in mobile, please download the mobile app"

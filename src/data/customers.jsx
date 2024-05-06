@@ -114,4 +114,25 @@ export const customers = [
     rating: 3.5,
     img: "/images/avatars/avatar3.png",
   },
+  {
+    id: 12,
+    name: "Lionel Michael",
+    gender: "Male",
+    rating: 3.5,
+    img: "/images/avatars/avatar3.png",
+  },
+  {
+    id: 13,
+    name: "Michelle Richardson",
+    gender: "Male",
+    rating: 3.5,
+    img: "/images/avatars/avatar3.png",
+  },
+  {
+    id: 14,
+    name: "Jenny Lauren",
+    gender: "Male",
+    rating: 3.5,
+    img: "/images/avatars/avatar3.png",
+  },
 ];
